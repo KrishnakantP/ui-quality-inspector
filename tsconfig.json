@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",                        // Compatible with VS Code runtime
+    "module": "commonjs",                   // Required for Node.js modules
+    "lib": ["es6", "dom"],                  // DOM for WebView support
+    "outDir": "out",                        // Output compiled JS to this folder
+    "rootDir": "src",                       // Your source folder
+    "strict": true,                         // Recommended for type safety
+    "esModuleInterop": true,                // Interop with CommonJS (for fs, path, etc.)
+    "skipLibCheck": true,                   // Faster builds
+    "sourceMap": true                       // Enable debugging in VS Code
+  },
+  "include": ["src/**/*"],                  // Include all TS files in src and subfolders,
+  "exclude": ["node_modules", "out"]        // Don't include node_modules or compiled output
+}
